@@ -1,3 +1,21 @@
-/**
- * Created by Jelena on 18.08.2019..
- */
+import React from 'react';
+
+const VideoListItem = ({video}) => {
+  // const video = props.video;
+  console.log(video)
+  const imageUrl = video.snippet.thumbnails.default.url;
+  return (
+    <li className="list-group-item">
+      <div className="video-list media">
+        <div className="media-left">
+          <img className="media-object" src={imageUrl} alt=""/>
+        </div>
+        <div className="media-body">
+          <div className="media-heading">{video.snippet.title}</div>
+        </div>
+      </div>
+    </li>
+  );
+};
+
+export default VideoListItem;
