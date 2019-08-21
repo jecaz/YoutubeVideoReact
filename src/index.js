@@ -15,7 +15,7 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     };
-    YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+    YTSearch({key: API_KEY, term: 'dolphin'}, (videos) => {
       // this.setState({ videos: videos });
       // case when key and value have same name:
       this.setState({
